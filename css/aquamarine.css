@@ -3,7 +3,15 @@
 * Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
 * Copyright 2014-2018 Pingendo (https://pingendo.com)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:200,300,400");
+
+/* Google Font */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Barlow+Condensed:300";
+/* Material Design Icon Font */
+@import "https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css";
+/* Font Awesome */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* Propeller CSS */
 @import "propeller.min.css";
 
 /*!
@@ -6524,6 +6532,7 @@ h2 {
 section {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: black
 }
 
 section:last-of-type:not(.no_bottom_margin) {
@@ -6619,7 +6628,7 @@ section.research{
     background-image: url(assets/building.jpg);
     background-position: top;
     background-repeat: repeat-y;
-    color: #fff;
+    color: white;
     background-size: cover;
 }
 
@@ -6782,7 +6791,7 @@ a:active {  color: #208698;  }
 .illustration {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 100%;
     position: relative;
 }
 
