@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/logos/AliceVision_circle.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/logos/AliceVision_circle.png">
   <title>Labcom Alicia-Vision</title>
   <meta name="description" content="ALICIA-Vision is a joint laboratory between the REVA team at IRIT (Institut de Recherche en Informatique de Toulouse) and the post-production company Mikros Image (Paris).">
   <meta name="keywords" content="Photogrammetry Computer Vision AI Artificial Intelligence photometric-stereo photometry ANR Research">
   <!-- CSS dependencies -->
-  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="./css/aquamarine.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
   <script src="js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
@@ -28,8 +29,17 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="#">Home</a>
           </li>
+          <!--<li class="nav-item mx-2">
+            <a class="nav-link" href="#presentation">Presentation</a>
+          </li>-->
           <li class="nav-item mx-2">
             <a class="nav-link" href="#objectives">Objectives</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#research">Research</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#AV-Meshroom">AliceVision</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="#organization">Organization</a>
@@ -41,37 +51,112 @@
       </div>
     </div>
   </nav>
+
   <!-- Cover -->
-  <div class="d-flex align-items-center py-5 cover" style="background-image: url(&quot;assets/conference/Buddha.gif&quot;);">
+  <div class="d-flex align-items-center py-5 cover" style="background-image: url(&quot;css/assets/Buddha.gif&quot;);">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
           <h1 class="display-2 d-none d-md-block">ALICIA-VISION</h1>
-          <p class="">ALICIA-Vision is a joint laboratory between the REVA team at IRIT (Institut de Recherche en Informatique de Toulouse) and the post-production company Mikros Image, located in Paris. Funded by the ANR, the French Research Agency, for a period of 4 years, this LabCom started in November 2020. </p>
+          <p>ALICIA-Vision is a joint laboratory between the REVA team at IRIT (Institut de Recherche en Informatique de Toulouse) and the post-production company Mikros Image, located in Paris. Funded by the ANR, the French Research Agency, for a period of 4 years, this LabCom started in November 2020.</p>
           <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
         </div>
       </div>
     </div>
   </div>
-  <!-- Objectives -->
-  <div class="py-5 section bg-faded bg-light" id="objectives">
+
+  <!-- Presentation -->
+  <!--<section class="presentation py-5" id="presentation">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-left">
-          <h1 class="mb-4">Objectives</h1>
-          <p>The objective of the ALICIA-Vision joint laboratory is to formalize a joint research activity:</p>
-          <ul>
-            <li>to innovate in the field of artificial vision, using geometric and photometric approaches,</li>
-            <li>to extract precise knowledge about cameras, the scene and materials of which it is made, and light sources;</li>
-            <li>to create a transversal link between the theoretical and algorithmic approaches for the creating visual effects by “classical” artificial vision, as currently developed by REVA and Mikros Image, and approaches to these problems by "intelligent” artificial vision, i.e. according to the paradigms of machine learning in Artificial Intelligence, in particular those of deep learning.</li>
-          </ul>
-          <p>The software integration of the research conducted by ALICIA-Vision is intended to expand the libraries of the AliceVision 3D reconstruction pipeline, used in production since 2016 by Mikros Image. This “classic” artificial vision pipeline is distributed as open source. The project is the result of a broad collaboration, which includes notably two European Horizon 2020 projects involving the REVA team (formerly VORTEX) and Mikros Image. The main application, called Meshroom, allows graphic designers to interactively configure pipeline processing.</p>
+        <div class="col-md-12 col-md-offset-2">
+          <p>ALICIA-Vision is a joint laboratory between the REVA team at IRIT (Institut de Recherche en Informatique de Toulouse) and the post-production company Mikros Image, located in Paris. Funded by the ANR, the French Research Agency, for a period of 4 years, this LabCom started in November 2020.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>-->
+
+  <!-- Objectives -->
+  <section class="objectives py-5" id="objectives">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1 class="text-center">Objectives</h1>
+            <p>The objective of the ALICIA-Vision joint laboratory is to formalize a joint research activity:</p>
+            <ul>
+              <li>to innovate in the field of artificial vision, using geometric and photometric approaches,</li>
+              <li>to extract precise knowledge about cameras, the scene and materials of which it is made, and light sources;</li>
+              <li>to create a transversal link between the theoretical and algorithmic approaches for the creating visual effects by “classical” artificial vision, as currently developed by REVA and Mikros Image, and approaches to these problems by "intelligent” artificial vision, i.e. according to the paradigms of machine learning in Artificial Intelligence, in particular those of deep learning.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research axes -->
+  <section class="research py-5" id="research">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left" style="">
+          <h1 class="text-center">Research axes</h1>
+          <p>LabCom ALICIA-Vision aims at capitalizing on the AliceVision pipeline and its software environment with ambitious objectives to develop new AI algorithms along four research axes.</p>
+        </div>
+      </div>
+
+      <div class="row axe-container">
+            <div class="col-xs-12 col-md-4 axe-text">
+                <h4 class="text-center">Improving the performance and robustness of the 3D reconstruction pipeline </h4>
+            </div>
+            <div class="col-xs-12 col-md-8 axe-img">
+                <img class="img-responsive" src="css/assets/meshroom/buddha_dataset2.png">
+            </div>
+        </div>
+
+        <div class="row axe-container">
+            <div class="col-xs-12 col-md-4 axe-text">
+                <h4 class="text-center">Camera tracking by localization and tracking of moving objects</h4>
+            </div>
+            <div class="col-xs-12 col-md-8 axe-img">
+                <img class="img-responsive" src="css/assets/meshroom/tracking.png">
+            </div>
+        </div>
+
+        <div class="row axe-container">
+            <div class="col-xs-12 col-md-4 axe-text">
+                <h4 class="text-center">Extraction of geometric and photometric characteristics in a multi-view pipeline</h4>
+            </div>
+            <div class="col-xs-12 col-md-8 axe-img">
+                <img class="img-responsive" src="css/assets/meshroom/SalleNoire.png">
+            </div>
+        </div>
+
+        <div class="row axe-container">
+            
+            <div class="col-xs-12 col-md-4 axe-text">
+                <h4 class="text-center">Determination of materials in a multi-view pipeline</h4>
+            </div>
+            <div class="col-xs-12 col-md-8 axe-img">
+                <img class="img-responsive" src="css/assets/meshroom/merl2.jpg">
+            </div>
+        </div>
+        
+    </div>
+  </section>
+  
+  <section class="AV-Meshroom py-5" id="AV-Meshroom" style="	background-image: url(css/assets/shattered/shattered.png);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left" style="">
+          <h1 class="text-center">AliceVision and Meshroom</h1>
+          <p>The software integration of the research conducted by ALICIA-Vision is intended to expand the libraries of the AliceVision 3D reconstruction pipeline, used in production since 2016 by Mikros Image. This “classic” artificial vision pipeline is distributed as open source. The project is the result of a broad collaboration, which includes notably two European Horizon 2020 projects involving the REVA team (formerly VORTEX) and Mikros Image. The main application, called Meshroom, allows graphic designers to interactively configure pipeline processing.<br><br></p><img class="img-fluid d-block mx-auto" src="css/assets/meshroom/Meshroom.png" width="90%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Organization -->
-  <div class="py-5" id="organization">
+  <section class="organization py-5" id="organization">
     <div class="container">
       <div class="row">
         <div class="text-center mx-auto col-md-12">
@@ -117,7 +202,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
   <!-- Footer -->
   <footer class="text-md-left text-center p-4 bg-dark text-light" id="contact">
     <div class="container">
@@ -142,12 +228,14 @@
       </div>
     </div>
   </footer>
+  
   <!-- JavaScript dependencies -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
+  
 </body>
 
 </html>

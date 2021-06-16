@@ -3,7 +3,17 @@
 * Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
 * Copyright 2014-2018 Pingendo (https://pingendo.com)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:200,300,400");
+
+/* Google Font */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Barlow+Condensed:300";
+/* Material Design Icon Font */
+@import "https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css";
+/* Font Awesome */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* Propeller CSS */
+@import "propeller.min.css";
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -46,7 +56,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -77,13 +87,13 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem; }*/
 
-p {
+/*p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; }*/
 
 abbr[title],
 abbr[data-original-title] {
@@ -6430,53 +6440,6 @@ body > * {
 .shadowed {
   box-shadow: 0px 0px 5px #555; }
 
-.section-aquamarine {
-  position: relative;
-  color: white;
-  background-size: cover;
-  background-position: center; }
-  .section-aquamarine:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: linear-gradient(to bottom right, rgba(18, 187, 173, 0.9) 0%, rgba(79, 112, 206, 0.9) 100%); }
-
-.section-dark {
-  position: relative;
-  color: #f3f3f3;
-  background-size: cover;
-  background-position: center; }
-  .section-dark:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(21, 21, 21, 0.75); }
-
-.section-light {
-  position: relative;
-  color: #151515;
-  background-size: cover;
-  background-position: center; }
-  .section-light:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(243, 243, 243, 0.75); }
-
-.section-parallax {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
-
 .bg-aquamarine {
   background: linear-gradient(-30deg, rgba(79, 112, 206, 0.9) 0%, rgba(18, 187, 173, 0.9) 50%, rgba(18, 187, 173, 0.95) 100%);
   color: white; }
@@ -6531,3 +6494,338 @@ body > * {
   .animate-in-right.out-of-viewport {
     opacity: 0;
     left: 5%; }
+
+
+/*Test
+ *
+ * /* Bootstrap css */
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+/* Google Font */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Barlow+Condensed:300";
+/* Material Design Icon Font */
+@import "https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css";
+/* Font Awesome */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* Propeller CSS */
+@import "propeller.min.css";
+
+/* Custom css */
+
+body {
+    background-color: #ededed;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black
+}
+
+section:last-of-type:not(.no_bottom_margin) {
+    padding-bottom: 6rem;
+}
+
+section.fixed_panel {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+section.white_panel {
+    background-color: #fff;
+}
+
+section.gray_panel {
+    background-color: #ededed;
+}
+
+section.blue_panel {
+    background-color: #0071bc;
+    color: #fff;
+}
+
+section.presentation {
+    background: #fff url("assets/shattered/shattered.png") repeat;
+    position: relative;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+header {
+    background-color: #FFF;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.up_margin {
+    margin-top: 2rem;
+}
+
+.bottom_margin {
+    margin-bottom: 2rem;
+}
+
+.strong_margin {
+    margin: 2rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-meshroom {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.text-center img.img-responsive{
+    margin: 1rem auto;
+}
+
+footer {
+    margin-bottom: 3rem;
+}
+
+footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
+footer .links a {
+    display: block;
+}
+
+footer a.partner {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.text-center img.img-responsive{
+    margin: 1rem auto;
+}
+
+section.research{
+    background-image: url(assets/building.jpg);
+    background-position: top;
+    background-repeat: repeat-y;
+    color: white;
+    background-size: cover;
+}
+
+section.research h2 {
+    margin-bottom: 20px;
+}
+
+section.research ul {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+section.research .join-us a {
+    color: white;
+}
+
+section.research .join-us {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+section.research .row {
+    margin-bottom: 6em;
+}
+
+section.research .axe-container {
+    background-color: rgba(0,0,0,0.2);
+    padding: 1em;
+}
+
+section.research .try-meshroom {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+section.research .try-meshroom a {
+    color: white;
+    background-color: #0071bc !important;
+    font-size: 1.2em;
+}
+
+section.research .try-meshroom a:hover {
+    background-color: #204d74 !important;
+}
+
+section.research .try-meshroom a:active {
+    background-color: #3dbff6 !important;
+}
+
+section.research img {
+    width: 600px;
+    margin-right: 10px;
+    display: inherit;
+}
+
+section.results {
+    background: #fff;
+}
+
+section.software_libraries {
+    background: #fff url("assets/shattered/shattered.png") repeat;
+}
+
+section.open_source {
+    background: #fff url("assets/shattered/shattered_blue.png") repeat;
+    color: white;
+}
+
+section.shattered_panel, #view{
+    background: #fff url("assets/shattered/shattered.png") repeat;
+}
+
+span.img_desc {
+    display: block;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.text-center img.img-responsive{
+    margin: 1rem auto;
+}
+
+.transition {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: inherit;
+}
+
+.transition.current {
+    background-color: rgba(62, 228, 255, 0.22);
+}
+
+.references td {
+    color: #999;
+    font-weight: 400;
+    border-top-color: #f5f5f5 !important;
+}
+
+#pipeline_title {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#view {
+    margin-top: 55px;
+}
+
+#pipeline_menu {
+    font-size: 0;
+}
+
+#pipeline_menu a {
+    color: #fff;
+    padding: 1em;
+}
+
+#pipeline_view section {
+    padding-top: 0;
+}
+
+#pipeline_view p {
+    text-align: justify;
+}
+
+.btn {
+    text-transform: inherit;
+}
+.btn i + span {
+    margin-left: 0.5em;
+}
+
+a {
+    color: #34b8d0;
+    cursor: pointer;
+}
+a:hover {  color: #45a5b9;  }
+a:active {  color: #208698;  }
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #34b8d0 !important;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #45a5b9 !important;
+}
+
+.btn-primary:active, .btn-primary.active {
+    color: #fff !important;
+    background-color: #208698 !important;
+}
+
+
+.illustration {
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width :  768px) {
+    index_overlay .text h1 {  font-size: 2.0em; }
+    .index_overlay .text h2 {  font-size: 1.5em; }
+    .index_overlay .text li {  font-size: 1.0em; }
+    /*.index_overlay { background-image: url("../img/result/home_lion_half_dark.jpg"); height: 80vw; background-size: cover }*/
+    section.research ul { font-size: 1.0em; line-height: 1.6em; }
+
+}
+
+@media only screen and (min-width: 992px) {
+    section.research .axe-container:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse; }
+
+}
+
+@media only screen and (max-width :  450px) {
+    .index_overlay .text h1 {  font-size: 1.5em; }
+    .index_overlay .text h2 {  display: none; }
+    .index_overlay .text h4 {  display: none; }
+    .index_overlay .text li {  font-size: 0.8em; }
+    /*.index_overlay { background-image: url("../img/result/home_lion_half_dark.jpg"); height: 80vw; background-size: cover }*/
+    section.research .join-us { font-size: 1.0em; line-height: 1.6em; }
+
+}
+
+@media only screen and (max-width :  280px) {
+    .index_overlay .text h1 {  font-size: 1.5em; }
+    .index_overlay .text h2 {  display: none; }
+    .index_overlay .text h4 {  display: none; }
+    .index_overlay .text li {  display: none; }
+    /*.index_overlay { background-image: url("../img/result/home_lion_half_dark.jpg"); height: 80vw; background-size: cover }*/
+    section.research .join-us { font-size: 1.0em; line-height: 1.6em; }
+}
