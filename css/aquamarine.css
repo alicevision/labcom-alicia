@@ -6680,7 +6680,7 @@ section.research .try-meshroom a:active {
 }
 
 section.research img {
-    width: 600px;
+    width: 100%;
     margin-right: 10px;
     display: inherit;
 }
