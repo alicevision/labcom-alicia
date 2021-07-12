@@ -6625,7 +6625,7 @@ footer a.partner {
 }
 
 section.research{
-    background-image: url(assets/building.jpg);
+    background-image: url(assets/stones.png);
     background-position: top;
     background-repeat: repeat-y;
     color: white;
@@ -6680,7 +6680,7 @@ section.research .try-meshroom a:active {
 }
 
 section.research img {
-    width: 600px;
+    width: 100%;
     margin-right: 10px;
     display: inherit;
 }
